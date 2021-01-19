@@ -384,6 +384,14 @@ p {
     grid-template-columns: 120px 1fr 250px;
     grid-template-rows: 85px;
   }
+  .container-fullscreen {
+    width: 45px;
+    height: 45px;
+    background: lightgray;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+  }
   .icon-menu {
     display: inherit;
     font-size: 30px;

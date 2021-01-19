@@ -13,6 +13,7 @@
 
 <body>
     <header>
+        <div class="container-fullscreen" id="fullscreen">Full</div>
         <img class="image-logo" src="images/nasa-logo.svg" alt="">
         <nav class="menu-superior">
             <ol>
@@ -127,5 +128,15 @@
             </ol>
         </nav>
     </footer>
+    <script>
+        const fullscreen = document.getElementById('fullscreen')
+        fullscreen.addEventListener('click', ()=> {
+            fullscreen.requestFullscreen().catch((e)=> {
+                console.log(e)
+            })
+        })
 
+
+
+    </script>
 </html>
