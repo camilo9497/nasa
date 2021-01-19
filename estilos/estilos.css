@@ -23,7 +23,7 @@ header {
 .container-fullscreen {
   width: 45px;
   height: 45px;
-  background: red;
+  background: green;
   display: grid;
   place-items: center;
   cursor: pointer;
