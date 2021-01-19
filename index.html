@@ -56,8 +56,6 @@
 
     <section class="cuerpo">
         <div id="container-one" class="container">
-            <div class="container-fullscreen" id="fullscreen">Full</div>
-
             <img class="sateliteprincipal" src="images/sateliteprincipal.jpg" alt="">
             <p class="description">International Space Station: Latest Updates</p>
         </div>
@@ -112,6 +110,12 @@
             <p class="description">NASA's Cassini Data Show Saturn's Rings Relatively New</p>
         </div>
     </section>
+    <section  class="embebido">
+        <div class="container-fullscreen" id="fullscreen">Full</div>
+
+        <iframe class='gwd-pdf' src="https://drive.google.com/file/d/1WWu0Nq0aV25bfSx1inflIThkYxN0S9qY/preview" width="100%"
+            height="100%" allow="fullscreen"></iframe>
+    </section>
     <footer class="footer">
         <p class="title-footer">more stories</p>
         <img class="logo2" src="images/nasa-logo.svg" alt="logo de la NASA">
@@ -133,10 +137,11 @@
     </footer>
     <script>
         const fullscreen = document.getElementById('fullscreen')
-        const container = document.getElementById('container-one')
+        // const container = document.getElementById('container-one')
+        const embebido = document.querySelector('.gwd-pdf')
 
         fullscreen.addEventListener('click', ()=> {
-            container.requestFullscreen().catch((e)=> {
+            embebido.requestFullscreen().catch((e)=> {
                 console.log(e)
             })
         })

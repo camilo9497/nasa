@@ -17,6 +17,9 @@ header {
   position: sticky;
   top: 0;
 }
+.embebido {
+  position: relative;
+}
 .container-fullscreen {
   width: 45px;
   height: 45px;
