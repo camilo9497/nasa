@@ -166,6 +166,7 @@ img {
 }
 .container:nth-child(1) {
   grid-area: sateliteprincipal;
+  position: relative;
 }
 .container:nth-child(2) {
   grid-area: luna;

@@ -12,7 +12,6 @@
 </head>
 
 <body>
-    <div class="container-fullscreen" id="fullscreen">Full</div>
 
     <header>
         <img class="image-logo" src="images/nasa-logo.svg" alt="">
@@ -56,7 +55,9 @@
     </header>
 
     <section class="cuerpo">
-        <div class="container">
+        <div id="container-one" class="container">
+            <div class="container-fullscreen" id="fullscreen">Full</div>
+
             <img class="sateliteprincipal" src="images/sateliteprincipal.jpg" alt="">
             <p class="description">International Space Station: Latest Updates</p>
         </div>
@@ -132,8 +133,10 @@
     </footer>
     <script>
         const fullscreen = document.getElementById('fullscreen')
+        const container = document.getElementById('container-one')
+
         fullscreen.addEventListener('click', ()=> {
-            fullscreen.requestFullscreen().catch((e)=> {
+            container.requestFullscreen().catch((e)=> {
                 console.log(e)
             })
         })
